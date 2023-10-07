@@ -8,4 +8,4 @@
 
 ### Connect me via nhatsang2905@gmail.com
 
-### Copyright &#169 ; 2023 Nhật.Sang
+### Copyright &#69 ; 2023 Nhật.Sang
