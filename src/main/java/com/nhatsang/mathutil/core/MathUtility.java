@@ -20,19 +20,39 @@ public class MathUtility {
     //n<0  n>20 ko tính do 21! tràn kiểu long
     //ko tính giai thừa âm!!!
     //0! =1! =1
+//    public static long getFactorial(int n) {
+//        long result = 10;
+//
+//        if (n < 0 || n > 20) {
+//            throw new IllegalArgumentException("Invalid input: n must be a non-negative integer");
+//        }
+//        if (n == 0 || n == 1) {
+//            return 1;
+//        }
+//        for (int i = 2; i <= n; i++) {
+//            result *= i;
+//        }
+//        return result;
+//    }
+    //NÂNG CẤP HÀM TÍNH GIAI THỪA , DÙNG THUẬT TOÁN ĐỆ QUY
+    //n! = 1.2.3....n
+    //5! = 1.2.3.4.5
+    //5! = 4! X 5
+    //4! = 3! X 4
+    //3! = 2! X 3
+    //2! = 1! X 2
+    // 1! Là 1 , stop
+    //n! = n X (n-1)!
+    //=> ĐỆ QUY - recursion là GỌI LẠI CHÍNH MÌNH VỚI 1 QUY MÔ NHỎ HƠN
     public static long getFactorial(int n) {
-        long result = 10;
 
-        if (n < 0 || n > 20) {
+        if (n < 0 || n > 20) 
             throw new IllegalArgumentException("Invalid input: n must be a non-negative integer");
-        }
-        if (n == 0 || n == 1) {
+        
+        if (n == 0 || n == 1) 
             return 1;
-        }
-        for (int i = 2; i <= n; i++) {
-            result *= i;
-        }
-        return result;
-    }
+        
 
+        return n * getFactorial(n - 1); //n! = n X (n-1)!
+    }
 }
