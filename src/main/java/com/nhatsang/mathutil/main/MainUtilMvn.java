@@ -10,7 +10,7 @@ import com.nhatsang.mathutil.core.MathUtility;
  *
  * @author nhats
  */
-public class Main {
+public class MainUtilMvn {
     public static void main(String[] args) {
         //test thu ham vua viet co dung ko
         //chuan bi bo data test: TEST CASE

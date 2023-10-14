@@ -45,7 +45,6 @@ public class MathUtility {
     //n! = n X (n-1)!
     //=> ĐỆ QUY - recursion là GỌI LẠI CHÍNH MÌNH VỚI 1 QUY MÔ NHỎ HƠN
     public static long getFactorial(int n) {
-
         if (n < 0 || n > 20) 
             throw new IllegalArgumentException("Invalid input: n must be a non-negative integer");
         
@@ -56,3 +55,11 @@ public class MathUtility {
         return n * getFactorial(n - 1); //n! = n X (n-1)!
     }
 }
+
+//chảnh cờ hó , ko thèm xem xanh đỏ ở local
+//để github actions làm giùm xanh đỏ
+// thực tế làm dự án : anh em fixbug
+//                      anh em tối ưu hàm cho chạy nhanh hơn
+//                      việc tới ưu này đúng hay sai về chất lượng code
+//                      leader chỉ cần  nhìn màu xanh là đủ 
+// nếu làm tốt thì phải
